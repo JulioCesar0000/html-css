@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmica </h1>
+    <p>Tente abrir as imagens abaixo em vários dispositivos diferente, ou aumente/dimunua o zoom do seu navegador </p>
+
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-panico.png">
+
+        <source media="(max-width: 1000px)" srcset="imagens/imagem-panico3.png" >
+
+        <img src="imagens/imagem-sla.png" alt="Imagem flexivel" ="(max-width: 3000px)">
+
+    </picture>
+</body>
+</html>

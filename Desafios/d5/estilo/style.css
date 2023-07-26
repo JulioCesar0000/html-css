@@ -26,6 +26,7 @@ header {
     color: white;
     text-align: center;
 }
+
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
@@ -35,36 +36,61 @@ header > h1 {
 
 header > p {
     padding-bottom: 50px;
+    
 }
+
 
 a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
+
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--font3);
-    font-size: 3.5vw;
+    font-size: 1.4em;
 }
+
+section > p{
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
 }
+
 section.imagem {
-    background-color: #454545;
+    background-color: rgba(0, 0, 0, 0.621);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.423);
+    background-attachment: fixed;
 }
+
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.267);
+    background-color: rgba(0, 0, 0, 0.495);
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
 }
 footer {
     background-color: black;

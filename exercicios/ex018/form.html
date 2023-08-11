@@ -6,21 +6,28 @@
     <title>Formulário</title>
     <style>
         body {
-            
             font-family: Arial, Helvetica, sans-serif;
+        }
+        img {
+           text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Meu Primeiro Formulário</h1>
-    <form action="cadrasto.php" autocomplete="off">
+    <h1>Se cadrasta ae</h1>
+    <h3>Inventa um nome e senha ai,inteligÊncia</h3>
+    <main>
+    <form action="cadrasto.HTML" method="post" autocomplete="off">
         <p><label for="iNome">Nome:</label>
-             <input type="text" name="Nome" id="iNome">
+             <input class="zeroum" type="text" name="Nome" id="iNome" required size="10"    >
         </p>
-        <p><label for="iSobrenome">Sobrenome: </label>
-            <input type="text" name="Sobrenome" id="iSobrenome">
+        <p><label for="iSen">Senha: </label>
+            <input type="password" name="Sen" id="Isen" required size="10">
         </p>
-        <p><input type="submit" value="Enviar"></p>
+        <p><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"></p>
+        <img src="download.jpeg" alt="">
+    </main>
     </form>
 </body>
 </html>

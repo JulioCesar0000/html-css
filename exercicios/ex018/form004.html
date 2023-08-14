@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+        }
+        fieldset {
+            width: 510px;
+            height: 300px;
+            text-align: center;
+            background-color: rgb(18, 14, 117);
+            color: rgb(255, 255, 255);
+            border-radius: 20px;
+        }
+        img {
+            width: 50px;
+            border-radius: 50%;
+        }
+        legend {
+            width: 50px;
+            height: -6px;
+        }
+        section {
+            justify-content: center;
+            align-content: center;
+            display: flex;
+            height: 80px;
+        }
+        .esq {
+            padding: 10px;
+            margin: 1px;
+            justify-content: center;
+            align-content: center;
+            display: flex;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<section>
+   <form action="cadrasto.HTML" method="get" autocomplete="off">
+        <fieldset>
+            <img src="macos-monterey-wwdc-21-stock-dark-mode-5k-6016x6016-5585.jpg" alt="sla">
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="Nome" id="inome" required maxlength="20" minlength="5" autocomplete="off">
+            </p>
+            <p>
+                <label for="imail">Email</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(xx) xxxx-xxxx" pattern="^[0-9]{4}-[0-9]{4}$">
+            </p>
+        </fieldset>
+        
+        <p class="esq">
+             <input type="submit" value="Enviar">   
+        </p>
+    </form>
+</section>
+</body>
+</html>
